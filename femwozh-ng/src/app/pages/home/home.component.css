@@ -1,0 +1,15 @@
+#loadedContent::ng-deep img{
+    animation: blink 3s infinite;
+}
+@keyframes blink {
+    0%,59% {
+        background-color: initial;
+        opacity: 1;
+        filter: invert(0);
+    }
+    60%, 100%  {
+        background-color: #ff00ff;
+        opacity: 1;
+        filter: invert(1);
+    }
+} 

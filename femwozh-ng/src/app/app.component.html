@@ -1,6 +1,22 @@
 <div class="topnav" id="header">
-  <div *ngFor="let page of pages" class="topnav_entry">
-    <a [routerLink]="page.url" routerDirection="root">{{page.title}}</a>
+  <div *ngFor="let page of pages" class="topnav_entry" [routerLink]="page.url" routerDirection="root">
+    <a>{{page.title}}</a>
   </div>
-  <router-outlet></router-outlet>
 </div>
+<!-- <div class="scrollingText">
+  <p class="marquee">
+    <span>16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;</span>
+  </p>
+  <p class="marquee marquee2">
+    <span>16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;</span>
+  </p>
+</div>
+-->
+<div class="disco">
+  <div class="infinite-loop--outer" #outerLoop>
+    <div>
+      <div class="infinite-loop second"><div class="infinite-loop--content">16. - 18. Oktober 2020 | Zentralwäscherei Zürich |&nbsp;</div> </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PageService } from 'src/app/services/page.service';
+import { PageData } from 'src/app/interfaces/pageData';
 
 @Component({
   selector: 'app-kontakt',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KontaktComponent implements OnInit {
 
-  constructor() { }
+  
+  pageData: PageData;
 
-  ngOnInit(): void {
+  constructor(private pageService: PageService) {}
+
+  ngOnInit() {
+    this.pageService
+      .getPageData("kontakt")
+      .subscribe(data => (this.pageData = data));
   }
-
 }
