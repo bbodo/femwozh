@@ -1,5 +1,5 @@
-<div id="header">
-  <div *ngFor="let page of pages" class="header-entries">
+<div class="topnav" id="header">
+  <div *ngFor="let page of pages" class="topnav_entry">
     <a [routerLink]="page.url" routerDirection="root">{{page.title}}</a>
   </div>
   <router-outlet></router-outlet>

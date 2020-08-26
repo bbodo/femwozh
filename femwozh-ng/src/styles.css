@@ -31,7 +31,7 @@ ul {
     margin-top: 2rem;
 }
 
-/* HEADER */
+/* HEADER / TOPNAV */
 .disco:hover {
     cursor:help;
 }
@@ -39,18 +39,15 @@ ul {
     font-weight: bold;
     border: 0.2rem solid black;
     text-align: center;
-    
+    margin-top: 0.2rem;
 }
 .topnav_entry.active, .topnav_entry:hover {
     background-color: #00ff00;
 }
-.topnav_entry_wrap {
-    margin-top: 0.2rem;
-}
-.topnav_entry_wrap:not(:last-child) {
+.topnav_entry:not(:last-child) {
     padding-right: 5px;
 }
-.topnav_entry_wrap:not(:first-child) {
+.topnav_entry:not(:first-child) {
     padding-left: 5px;
 }
 
