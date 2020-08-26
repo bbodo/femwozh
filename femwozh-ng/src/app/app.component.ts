@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PageService } from './services/page.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'femwozh';
+  title = 'FEMWO!';
 }
+
