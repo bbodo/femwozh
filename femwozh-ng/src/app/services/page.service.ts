@@ -15,19 +15,19 @@ export class PageService {
   getPages(): any {
     return [
         {
-          title: "Home",
-          url: "/home"
+          title: "ABOUT",
+          url: "/about"
         },
         {
-          title: "Mitmachen",
+          title: "MITMACHEN",
           url: "/mitmachen"
         },
         {
-          title: "Kontakt",
+          title: "KONTAKT",
           url: "/kontakt"
         },
         {
-          title: "Programm",
+          title: "PROGRAMM",
           url: "/programm"
         }
       ];

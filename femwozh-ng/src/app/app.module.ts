@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { MitmachenComponent } from './pages/mitmachen/mitmachen.component';
 import { KontaktComponent } from './pages/kontakt/kontakt.component';
 import { ProgrammComponent } from './pages/programm/programm.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ProgrammComponent } from './pages/programm/programm.component';
     HomeComponent,
     MitmachenComponent,
     KontaktComponent,
-    ProgrammComponent
+    ProgrammComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
