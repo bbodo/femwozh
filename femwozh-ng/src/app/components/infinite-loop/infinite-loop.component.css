@@ -1,0 +1,27 @@
+/* DISCO */
+.infinite-loop--outer {
+    overflow: hidden;
+}
+
+.infinite-loop--outer div {
+    display: inline-block;
+}
+
+.infinite-loop {
+    font-weight: bold;
+    white-space: nowrap;
+    animation: infinite-loop--anim 40s linear infinite;
+}
+.infinite-loop.second {
+    animation-direction: reverse;
+}
+
+@keyframes infinite-loop--anim {
+    
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -50%
+    }
+}

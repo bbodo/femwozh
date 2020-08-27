@@ -9,6 +9,7 @@ import { KontaktComponent } from './pages/kontakt/kontakt.component';
 import { ProgrammComponent } from './pages/programm/programm.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './pages/about/about.component';
+import { InfiniteLoopModule } from './components/infinite-loop/infinite-loop.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutComponent } from './pages/about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    InfiniteLoopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
